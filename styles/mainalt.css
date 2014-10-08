@@ -1,0 +1,27 @@
+body {
+	
+}
+
+header {
+	background: #CFEFEE;
+	margin-bottom: -100px;
+}
+
+section {
+	background: #69C4CC;
+	margin-top: -20px;
+}
+
+footer {
+	background: #69C4CC;
+	margin-top: -20px;
+}
+
+.box {
+	width: 1000px;
+	background-color: #FFFFFF;
+	border-radius: 30px;
+	padding-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
