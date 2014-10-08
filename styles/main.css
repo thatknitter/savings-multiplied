@@ -23,7 +23,7 @@ header ul {
   float: right;
   list-style-type: none;
 }
-header ul li, footer ul li, ul#social li {
+header ul li, footer ul li, ul.social li {
    display: inline-block;
  }
 
