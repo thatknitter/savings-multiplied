@@ -7,10 +7,11 @@
 	</head>
 	<body>
 		<header>
+			<div class="background">
 			<nav class="authentication">
 				<ul>
-					<li><a href="">sign in</a></li>
-					<li><a href="">sign up</a></li>
+					<li><a href="#" onclick="show(document.querySelector('.login-modal'));">sign in</a></li>
+					<li><a href="#">sign up</a></li>
 				</ul>
 			</nav>
 			<div class="headbox">
@@ -32,11 +33,13 @@
 					<li><a href="">Links</a></li>
 					<li><a href="">Community</a></li>
 					<li><form action="#" method="GET">
-					<label for="search_term">Search</label>
+					<label for="search_term"></label>
 					<input id="search_term" type="text" placeholder="search">
 					<input type="submit" value="Search"></form></li>
 				</ul>
-			</nav></div>
+			</nav>
+			</div>
+			</div>
 		</header>
 		<section>
 			<div class="secbox">
@@ -76,5 +79,19 @@
 				</ul>
 			</nav>
 		</footer>
+		<div class="login-modal">
+			<div class="lightbox"></div>
+			<div class="login-form">
+				<form>
+					<label>Username</label>
+					<input type="text" placeholder="username">
+					<label>Password</label>
+					<input type="password" placeholder="password">
+					<input type="submit" value="login">
+					<input type="button" value="cancel" onclick="hide(document.querySelector('.login-modal'));">
+				</form>
+			</div>
+		</div>
 	</body>
+	<script src="javascript-jquery/login.js"></script>
 </html>
