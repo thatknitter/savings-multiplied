@@ -4,11 +4,16 @@ body {
 
 .background {
 	background: #CFEFEE;
+	padding-bottom: 4%;
 }
 
 section {
 	background: #69C4CC;
 	margin-top: -20px;
+}
+
+section ul li {
+	list-style-type: none;
 }
 
 nav.authentication {
@@ -21,6 +26,7 @@ nav.authentication {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	padding-top: 100px;
+	padding-bottom: 5%;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
@@ -51,7 +57,7 @@ header ul li, footer ul li, ul.social li {
 	display: inline-block;
  }
 
-.logo {
+#logo {
 	margin-top: -80px;
 	margin-left: 10px;
 }
@@ -122,13 +128,81 @@ nav.pinkbar ul li a {
 	font-family: Cooper Black, Arial Black, sans-serif;
 	font-size: 16pt;
 	color: #6F1549;
+	float: right;
+	list-style-type: none;
 }
 
 nav.pinkbar ul li {
 	font-size: 16pt;
+	margin: 1%;
+	margin-right: 3.5%;
+	list-style-type: none;
+	display: inline;
+	float: right;
 }
 
-nav.pinkbar
+.pinkbar ul{
+	width: 100%;
+	height: .5%;
+	background: #F5CBD3;
+	float: right;
+	margin-top: -1%;
+	padding-right: 15%;
+}
+
+input.search_term {
+	border: #E399A7;
+	border-style: solid;
+	border-radius: 10px;
+	font-size: 10pt;
+}
+
+h2 {
+	font-family: Cooper Black, Arial Black, sans-serif;
+	color: #8CB82C;
+	font-size: 18pt;
+	margin-top: -5%;
+	margin-left: 2%;
+}
+
+img.yolo {
+	margin-left: 2%;
+}
+
+p.call {
+	margin-left: 5%;
+	font-family: Tahoma, helvetica, arial, sans-serif;
+	font-size: 16pt;
+	color:#69C4CC;
+	margin-top: -30px;
+}
+
+ul.kidpictures{
+	float: right;
+	margin-top: -1%;
+	margin-right: 5%;
+	margin-left: 10px;
+}
+
+p {
+	margin-left: 5%;
+	font-family: Tahoma, helvetica, arial, sans-serif;
+	font-size: 13pt;
+	color: #5B7E0E;
+}
+
+h4 {
+	font-family: Cooper Black, Arial Black, sans-serif;
+	font-size: 16pt;
+	color: #5B7E0E;
+	margin-left: 5%;
+}
+
+img.tree {
+	float: right;
+	margin-top: -100px;
+	margin-bottom: 100px;
+}
 
 ul.social {
 	list-style-type: none;
@@ -166,9 +240,29 @@ img.logo {
 	max-width: 100%;
 }
 
-.login-modal {
-	display: none;
+nav.footnav ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
 }
+
+nav.footnav ul {
+	text-align: center;
+}
+
+nav.footnav ul li {
+	margin-left: 2%;
+	border-style: solid;
+	border-color: #69C4CC #FFFFFF #69C4CC #69C4CC;
+	width: 120px;
+}
+
+nav.footnav ul li:last-child {
+	border-color: #69C4CC;
+}
+
+/*.login-modal {
+	display: none;
+}*/
 
 .login-form {
 	border: 1px solid;
@@ -189,4 +283,8 @@ img.logo {
 	top: 0;
 	height: 100%;
 	width: 100%;
+}
+
+.hidden {
+	display: none;
 }

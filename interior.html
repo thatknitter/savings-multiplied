@@ -1,61 +1,80 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Savings Multiplied</title>
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/mainalt.css">
+		<link rel="stylesheet" type="text/css" href="styles/int.css">
 	</head>
 	<body>
-		<div id="header">
-			<div class="signin">sign in | sign up</div>
-			<img class="logo" src="images/savings-multiplied-logo.jpg">
-			<ul class="nav1">
-				<li>About</li>
-				<li>Contact</li>
-				<li>Blog</li>
-				<li>Press</li>
-			</ul>
-			<div class="subtitle">where parents of multiples save, sell &amp; share</div>
-			<div class="nav2">
-				<ul class="nav2">
-					<li>Buy</li>
-					<li>Sell</li>
-					<li>How it Works</li>
-					<li>Links</li>
-					<li>Community</li>
-					<li>Search</li>
+		<div class="background">
+		<header>
+			<nav class="authentication">
+				<ul>
+					<li><a href="#" class="signin"> <!--onclick="show(document.querySelector('.login-modal'));"-->sign in</a></li>
+					<li><a href="#">sign up</a></li>
 				</ul>
+			</nav>
+			<div class="headbox">
+			<img class="logo" src="images/savings-multiplied-logo.png" alt="savings multiplied logo">
+			<nav class="primary">
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Press</a></li>
+				</ul>
+			</nav>
+			<h3>where parents of multiples save, sell &amp; share</h3>
 			</div>
-		</div>
-		<div id="section">
+		</header>
+		<nav class="pinkbar">
+				<ul>
+					<li><form action="#" method="GET">
+					<label for="search_term"></label>
+					<input class="search_term" type="text" placeholder="search">
+					</form></li>
+					<li><a href="">Community</a></li>
+					<li><a href="">Links</a></li>
+					<li><a href="">How it Works</a></li>
+					<li><a href="">Sell</a></li>
+					<li><a href="">Buy</a></li>
+				</ul>
+			</nav>
+			</div>
+		<section>
+			<div class="secbox">
 			<div class="sidebar">
 				<form>
 					Limit your search by:
 					<br>
 					<input type="text" name="search"> <input type="submit" value="search">
 					<br>
-					<ul class="condition">Condition: <li><input type="radio"> New</li>
-					<li><input type="radio"> Gently Used</li>
+					<ul class="condition">Condition: <li><input type="radio" name="condition"> New</li>
+					<li><input type="radio" name="condition"> Gently Used</li>
 					<br></ul>
 					<ul class="size">
 					Size: 
 					<br>
-					<li><input type="radio"> 4</li>  <li><input type="radio"> 8</li>
-					<li><input type="radio"> 5</li>  <li><input type="radio"> 9</li>
-					<li><input type="radio"> 6</li>  <li><input type="radio"> 10</li>
-					<li><input type="radio"> 7</li>  <li><input type="radio"> 11</li>
+					<li><input type="radio" name="size"> 4</li>  <li><input type="radio" name="size"> 8</li>
+					<li><input type="radio" name="size"> 5</li>  <li><input type="radio" name="size"> 9</li>
+					<li><input type="radio" name="size"> 6</li>  <li><input type="radio" name="size"> 10</li>
+					<li><input type="radio" name="size"> 7</li>  <li><input type="radio" name="size"> 11</li>
 					<br></ul>
 					<ul class="season">
 					Season:
-					<li><input type="radio"> All Seasons</li>
-					<li><input type="radio"> Spring</li>
-					<li><input type="radio"> Summer</li>
-					<li><input type="radio"> Fall</li>
-					<li><input type="radio"> Winter</li>
+					<li><input type="radio" name="season"> All Seasons</li>
+					<li><input type="radio" name="season"> Spring</li>
+					<li><input type="radio" name="season"> Summer</li>
+					<li><input type="radio" name="season"> Fall</li>
+					<li><input type="radio" name="season"> Winter</li>
 					<br></ul>
 					<ul class="type">
 					Type:
-					<li><input type="radio"> Any</li>
-					<li><input type="radio"> One-Piece</li>
-					<li><input type="radio"> Tops</li>
-					<li><input type="radio"> Bottoms</li>
+					<li><input type="radio" name="type"> Any</li>
+					<li><input type="radio" name="type"> One-Piece</li>
+					<li><input type="radio" name="type"> Tops</li>
+					<li><input type="radio" name="type"> Bottoms</li>
 					</ul>
 				</form>
 				<form action="" class="brand">
@@ -65,10 +84,75 @@
 						<option value="anotherbrand">Another Brand</option>
 					</select>
 				</form>
+			<div class="categorylink">
+				<ul>
+					<li><a href="#">All</a></li> >
+					<li><a href="#">Twin</a></li> >
+					<li><a href="#">B/G</a></li>
+				</ul>
+			</div>
+			<div class="sort">
+				<form action="" class="sort">
+					<select name="sort">
+						<option value="price">Price</option>
+						<option value="popular">Most Popular</option>
+						<option value="newest">Newest</option>
+						<option value="oldest">Oldest</option>
+					</select>
+				</form>
+			</div>
+			<div class="page-adjust">
+				<ul>
+					<li><a href="#">prev.</a></li>
+					<li><a href="#">page num.</a></li>
+					<li><a href="#">next</a></li>
+					<li><a href="#">view all</a></li>
+				</ul>
 			</div>
 			<div class="items">
-				
+				<ul>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+					<li>Sailor suits $15 Jane Doe 4 Hours</li>
+				</ul>
+			</div>
+			</div>
+			</div>
+		</section>
+		<footer>
+			<nav class="footnav">	
+				<ul class="foot">
+					<li><a href="">Link Here</a></li> 
+					<li><a href="">Link Here</a></li> 
+					<li><a href="">Link Here</a></li> 
+					<li><a href="">Link Here</a></li> 
+					<li><a href="">Link Here</a></li> 
+					<li><a href="">Link Here</a></li>  
+				</ul>
+			</nav>
+		</footer>
+		<div class="login-modal">
+			<div class="lightbox"></div>
+			<div class="login-form">
+				<form>
+					<label>Username</label>
+					<input type="text" placeholder="username">
+					<label>Password</label>
+					<input type="password" placeholder="password">
+					<input type="submit" value="login">
+					<input type="button" value="cancel" class="cancel"> <!--onclick="hide(document.querySelector('.login-modal'));"-->
+				</form>
 			</div>
 		</div>
 	</body>
+	<script src="javascript-jquery/login.js"></script>
 </html>

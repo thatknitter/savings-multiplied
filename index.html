@@ -6,16 +6,16 @@
 		<link rel="stylesheet" type="text/css" href="styles/mainalt.css">
 	</head>
 	<body>
+		<div class="background">
 		<header>
-			<div class="background">
 			<nav class="authentication">
 				<ul>
-					<li><a href="#" onclick="show(document.querySelector('.login-modal'));">sign in</a></li>
+					<li><a href="#" class="signin"> <!--onclick="show(document.querySelector('.login-modal'));"-->sign in</a></li>
 					<li><a href="#">sign up</a></li>
 				</ul>
 			</nav>
 			<div class="headbox">
-			<img class="logo" src="images/savings-multiplied-logo.jpg" alt="savings multiplied logo">
+			<img id="logo" src="images/savings-multiplied-logo.jpg" alt="savings multiplied logo"> 
 			<nav class="primary">
 				<ul>
 					<li><a href="">About</a></li>
@@ -25,41 +25,42 @@
 				</ul>
 			</nav>
 			<h3>where parents of multiples save, sell &amp; share</h3>
-			<nav class="pinkbar">
+			</div>
+		</header>
+		<nav class="pinkbar">
 				<ul>
-					<li><a href="">Buy</a></li>
-					<li><a href="">Sell</a></li>
-					<li><a href="">How it Works</a></li>
-					<li><a href="">Links</a></li>
-					<li><a href="">Community</a></li>
 					<li><form action="#" method="GET">
 					<label for="search_term"></label>
-					<input id="search_term" type="text" placeholder="search">
-					<input type="submit" value="Search"></form></li>
+					<input class="search_term" type="text" placeholder="search">
+					</form></li>
+					<li><a href="">Community</a></li>
+					<li><a href="">Links</a></li>
+					<li><a href="">How it Works</a></li>
+					<li><a href="">Sell</a></li>
+					<li><a href="">Buy</a></li>
 				</ul>
 			</nav>
 			</div>
-			</div>
-		</header>
 		<section>
 			<div class="secbox">
+				
 			<div>
+			<ul class="kidpictures">
+				<li><img src="images/twins.jpg"></li>
+				<li><img src="images/triplets.jpg"></li>
+				<li><img src="images/quadshope.jpg"></li>
+			</ul>
 				<h2>We're making one aspect of life easier for parents of multiples!</h2>
-				<img src="images/owl_light_blue_32.jpg"> 
-				<p>buying and selling gently used sets of clothes!</p>
-				<a href="#">Shop Now!</a>
-				<img src="images/tree.jpg">
+				<img src="images/owl_light_blue_32.jpg" class="yolo"> 
+				<p class="call">buying and selling gently used sets of clothes!</p>
+				<a href="#"><img src="images/left_2_shop_now.jpg"></a>
 				<p>Our goal is to take the hassel out of consigning, so listing your items is a piece of cake. Shop from other parents of multiples and find
 				coordinating (or not!) sets of clothes for your kids in a matter of minutes.</p>
 				
 				<h4>Welcome to Savings Multiplied,</h4>
-				your new online resource for all things Multiples!
+				<p>your new online resource for all things Multiples!</p>
+				<img src="images/tree.jpg" class="tree">
 			</div>
-			<ul class="pictures">
-				<li><img src="images/twins.jpg"></li>
-				<li><img src="images/triplets.jpg"></li>
-				<li><img src="images/quads.jpg"></li>
-			</ul>
 			<ul class="social">
 				<li><a href=""><img src="images/facebook_callout.jpg"></a></li>
 				<li><a href=""><img src="images/twitter_callout.jpg"></a></li>
@@ -79,7 +80,7 @@
 				</ul>
 			</nav>
 		</footer>
-		<div class="login-modal">
+		<div class="login-modal hidden">
 			<div class="lightbox"></div>
 			<div class="login-form">
 				<form>
@@ -88,7 +89,7 @@
 					<label>Password</label>
 					<input type="password" placeholder="password">
 					<input type="submit" value="login">
-					<input type="button" value="cancel" onclick="hide(document.querySelector('.login-modal'));">
+					<input type="button" value="cancel" class="cancel"> <!--onclick="hide(document.querySelector('.login-modal'));"-->
 				</form>
 			</div>
 		</div>
