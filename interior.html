@@ -44,47 +44,7 @@
 			</div>
 		<section>
 			<div class="secbox">
-			<div class="sidebar">
-				<form>
-					Limit your search by:
-					<br>
-					<input type="text" name="search"> <input type="submit" value="search">
-					<br>
-					<ul class="condition">Condition: <li><input type="radio" name="condition"> New</li>
-					<li><input type="radio" name="condition"> Gently Used</li>
-					<br></ul>
-					<ul class="size">
-					Size: 
-					<br>
-					<li><input type="radio" name="size"> 4</li>  <li><input type="radio" name="size"> 8</li>
-					<li><input type="radio" name="size"> 5</li>  <li><input type="radio" name="size"> 9</li>
-					<li><input type="radio" name="size"> 6</li>  <li><input type="radio" name="size"> 10</li>
-					<li><input type="radio" name="size"> 7</li>  <li><input type="radio" name="size"> 11</li>
-					<br></ul>
-					<ul class="season">
-					Season:
-					<li><input type="radio" name="season"> All Seasons</li>
-					<li><input type="radio" name="season"> Spring</li>
-					<li><input type="radio" name="season"> Summer</li>
-					<li><input type="radio" name="season"> Fall</li>
-					<li><input type="radio" name="season"> Winter</li>
-					<br></ul>
-					<ul class="type">
-					Type:
-					<li><input type="radio" name="type"> Any</li>
-					<li><input type="radio" name="type"> One-Piece</li>
-					<li><input type="radio" name="type"> Tops</li>
-					<li><input type="radio" name="type"> Bottoms</li>
-					</ul>
-				</form>
-				<form action="" class="brand">
-					<select name="brand">
-						<option value="janie_and_jack">Janie and Jack</option>
-						<option value="otherbrand">Other Brand</option>
-						<option value="anotherbrand">Another Brand</option>
-					</select>
-				</form>
-			<div class="categorylink">
+				<div class="categorylink">
 				<ul>
 					<li><a href="#">All</a></li> >
 					<li><a href="#">Twin</a></li> >
@@ -109,23 +69,54 @@
 					<li><a href="#">view all</a></li>
 				</ul>
 			</div>
-			<div class="items">
-				<ul>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-					<li>Sailor suits $15 Jane Doe 4 Hours</li>
-				</ul>
+			<div class="sidebar">
+				<form>
+					Limit your search by:
+					<br>
+					<input type="text" name="search" class="search"> <input type="submit" value="search" class="submit">
+					<br>
+					<ul class="condition">Condition: <li><input type="radio" name="condition"> New</li>
+					<li><input type="radio" name="condition"> Gently Used</li>
+					<br></ul>
+					<ul class="size">
+					Size: 
+					<br>
+					<li><input type="radio" name="size"> 4</li>  <li><input type="radio" name="size"> 6</li>
+					<li><input type="radio" name="size"> 8</li>  <li><input type="radio" name="size"> 10</li>
+					<li><input type="radio" name="size"> 5</li>  <li><input type="radio" name="size"> 7</li>
+					<li><input type="radio" name="size"> 9</li>  <li><input type="radio" name="size"> 11</li>
+					<br></ul>
+					<ul class="season">
+					Season:
+					<li><input type="radio" name="season"> All Seasons</li>
+					<li><input type="radio" name="season"> Spring</li>
+					<li><input type="radio" name="season"> Summer</li>
+					<li><input type="radio" name="season"> Fall</li>
+					<li><input type="radio" name="season"> Winter</li>
+					<br></ul>
+					<ul class="type">
+					Type:
+					<li><input type="radio" name="type"> Any</li>
+					<li><input type="radio" name="type"> One-Piece</li>
+					<li><input type="radio" name="type"> Tops</li>
+					<li><input type="radio" name="type"> Bottoms</li>
+					</ul>
+				</form>
+				<form action="" class="brand">
+					<select name="brand">
+						<option value="janie_and_jack">Janie and Jack</option>
+						<option value="otherbrand">Other Brand</option>
+						<option value="anotherbrand">Another Brand</option>
+					</select>
+				</form>
+			
 			</div>
+			<div id="items">
+				<ul id="target">
+          
+        </ul>
 			</div>
+
 			</div>
 		</section>
 		<footer>
@@ -155,4 +146,5 @@
 		</div>
 	</body>
 	<script src="javascript-jquery/login.js"></script>
+   <script src="javascript-jquery/interior.js"></script>
 </html>

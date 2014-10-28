@@ -1,0 +1,81 @@
+.sidebar {
+	width: 25%;
+	border-radius: 30px;
+	border-style: none;
+	background-color: #EDFAD1; 
+	margin-left: 2%;
+	margin-bottom: 10%;
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 5%;
+	margin-top: -8%;
+	color: #8CB82C;
+}
+
+.sidebar ul {
+	margin-left: -15%;
+}
+
+.sidebar ul.condition li {
+	display: inline;
+}
+
+.sidebar ul.size li {
+	display: inline-block;
+	padding: 4%;
+}
+
+.sidebar ul.season li {
+	padding: 1%;
+}
+
+.sidebar ul.type li {
+	padding: 1%;
+}
+
+input.search {
+	margin-top: 3%;
+}
+
+input.submit {
+	margin-top: 1%;
+	border-radius: 20px;
+}
+
+.categorylink {
+	float: left;
+	margin-left: 29%;
+	margin-bottom: 2%;
+	margin-top: -10%;
+}
+
+.categorylink ul li {
+	display: inline;
+}
+
+.categorylink ul li a {
+	text-decoration: none;
+	color: #8CB82C;
+}
+
+.sort {
+	float: left;
+	margin-left: 29.75%;
+	margin-top: -5%;
+}
+
+.page-adjust {
+	float: right;
+	margin-right: 5%;
+	margin-top: -7%;
+}
+
+.page-adjust ul li {
+	display: inline;
+}
+
+.page-adjust ul li a {
+	text-decoration: none;
+	color: #8CB82C;
+}
